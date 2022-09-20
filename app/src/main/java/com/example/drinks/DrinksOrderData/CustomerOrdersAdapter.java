@@ -27,7 +27,7 @@ public class CustomerOrdersAdapter extends RecyclerView.Adapter<CustomerOrdersAd
     private int _customerID;
 
     /**
-     * This method is called whe the ViewHolder is created and is used to Inflate the layout to fit the
+     * This method is used to Inflate the layout to fit the
      * parent's context and will be displayed on a view
      *
      * @param parent The parent so that the view is fit to the context
@@ -83,7 +83,7 @@ public class CustomerOrdersAdapter extends RecyclerView.Adapter<CustomerOrdersAd
     }
 
     /**
-     * A Method used to set the orderList and OrderDB in the class
+     * A Method used to set the orderList in the class
      * @param db The orderDB that is used to set
      * @param orders The orderList that is used to set
      */
@@ -110,7 +110,7 @@ public class CustomerOrdersAdapter extends RecyclerView.Adapter<CustomerOrdersAd
 
         /**
          * The Recommended constructor for ViewHolder
-         * @param itemView
+         * @param itemView the item it is holding
          */
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

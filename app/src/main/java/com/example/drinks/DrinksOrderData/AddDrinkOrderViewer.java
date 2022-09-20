@@ -21,7 +21,7 @@ import java.util.List;
 public class AddDrinkOrderViewer extends AppCompatActivity {
 
     //A DrinkOrderRecyler called _drinkOrderRecycler
-    DrinkOrderRecyler _drinkOrderRecycler;
+    DrinkOrderAdapter _drinkOrderRecycler;
     //A DrinkDB called _db
     DrinkDB _db;
     //A OrderDB called orderDB
@@ -47,7 +47,7 @@ public class AddDrinkOrderViewer extends AppCompatActivity {
         //This is done by getting the extra data from the intent
         _customerID = getIntent().getIntExtra("ID", _customerID);
         //_drinkOrderRecycler
-        _drinkOrderRecycler = new DrinkOrderRecyler();
+        _drinkOrderRecycler = new DrinkOrderAdapter();
 
         //Creates a new Recycler view and sets the LinearLayout to the OrderRecyler
         RecyclerView recyclerView = findViewById(R.id.OrderRecyler);

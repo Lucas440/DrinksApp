@@ -1,11 +1,9 @@
 package com.example.drinks;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.Observer;
+
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +11,6 @@ import android.widget.EditText;
 import com.example.drinks.DrinkData.Drink;
 import com.example.drinks.DrinkData.DrinkDB;
 
-import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -29,7 +26,7 @@ public class CreateNewDrink extends AppCompatActivity {
     //EditText Variables called _titleText, _descText and _priceText
     EditText _titleText, _descText, _priceText;
 
-    /**
+    /**z
      * A method that is called when the class is created
      * @param savedInstanceState
      */
