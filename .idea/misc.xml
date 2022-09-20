@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_add_drink_order.xml" value="0.4" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_create_new_drink.xml" value="0.2" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_customer_list_viewer.xml" value="0.6" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_customer_order.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_customer_order_list.xml" value="0.536" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_customer_orders_viewer.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_drink_list_viewer.xml" value="0.264" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_drink_option.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_drink_order_recyler.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_main.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_new_seating.xml" value="0.20625566636446055" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_reset_app.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Drinks/app/src/main/res/layout/activity_seat_selection.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewSeating">
+
+    <TextView
+        android:id="@+id/SeatLoation_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Seat Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/SeatLoaction_EditText"
+        android:layout_width="223dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Seat Location"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/SeatLoation_Title"
+        app:layout_constraintTop_toBottomOf="@+id/SeatLoation_Title" />
+
+    <TextView
+        android:id="@+id/PersonName_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Persons Name"
+        app:layout_constraintStart_toStartOf="@+id/SeatLoaction_EditText"
+        app:layout_constraintTop_toBottomOf="@+id/SeatLoaction_EditText" />
+
+    <EditText
+        android:id="@+id/PersonsName_Text"
+        android:layout_width="314dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Persons Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/PersonName_Title"
+        app:layout_constraintTop_toBottomOf="@+id/PersonName_Title" />
+
+    <Button
+        android:id="@+id/Done_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onSaveClick"
+        android:text="Done!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

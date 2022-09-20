@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".DrinksOrderData.AddDrinkOrderViewer">
+
+    <LinearLayout
+        android:id="@+id/AddOrderLayout"
+        android:layout_width="365dp"
+        android:layout_height="352dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/createNewDrink_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/AddDrinkLayout"
+            android:layout_width="match_parent"
+            android:layout_height="154dp">
+
+            <TextView
+                android:id="@+id/OrderDesc_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Description"
+                app:layout_constraintStart_toStartOf="@+id/OrderTitle_Text"
+                app:layout_constraintTop_toBottomOf="@+id/OrderTitle_Text" />
+
+            <TextView
+                android:id="@+id/OrderTitle_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                app:layout_constraintStart_toStartOf="@+id/OrderName_Title"
+                app:layout_constraintTop_toBottomOf="@+id/OrderName_Title" />
+
+            <TextView
+                android:id="@+id/OrderDesc_Text"
+                android:layout_width="343dp"
+                android:layout_height="41dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="@+id/OrderDesc_Title"
+                app:layout_constraintTop_toBottomOf="@+id/OrderDesc_Title" />
+
+            <TextView
+                android:id="@+id/OrderPrice_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="@+id/OrderPrice_Title"
+                app:layout_constraintTop_toBottomOf="@+id/OrderPrice_Title" />
+
+            <TextView
+                android:id="@+id/OrderName_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Drink Name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/OrderPrice_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                app:layout_constraintStart_toStartOf="@+id/OrderDesc_Text"
+                app:layout_constraintTop_toBottomOf="@+id/OrderDesc_Text" />
+
+            <Button
+                android:id="@+id/AddOrder_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/OrderDesc_Text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

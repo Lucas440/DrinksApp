@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Customer_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CustomerData.CustomerListViewer">
+
+    <LinearLayout
+        android:id="@+id/Cus_Layout"
+        android:layout_width="412dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="141dp">
+
+            <TextView
+                android:id="@+id/SeatLocation_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seat Location"
+                app:layout_constraintStart_toStartOf="@+id/SeatLocon_Text"
+                app:layout_constraintTop_toBottomOf="@+id/SeatLocon_Text" />
+
+            <TextView
+                android:id="@+id/CustomerSeat_Text"
+                android:layout_width="185dp"
+                android:layout_height="33dp"
+                app:layout_constraintStart_toStartOf="@+id/SeatLocation_Title"
+                app:layout_constraintTop_toBottomOf="@+id/SeatLocation_Title" />
+
+            <TextView
+                android:id="@+id/CustomerName_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="32dp"
+                android:text="Customer Name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/SeatLocon_Text"
+                android:layout_width="183dp"
+                android:layout_height="35dp"
+                app:layout_constraintStart_toStartOf="@+id/CustomerName_Title"
+                app:layout_constraintTop_toBottomOf="@+id/CustomerName_Title" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/editCustomerOrder_Button"
+                android:layout_width="40dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="64dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_edit"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/TotalPrice_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Total"
+                app:layout_constraintStart_toEndOf="@+id/SeatLocon_Text"
+                app:layout_constraintTop_toBottomOf="@+id/editCustomerOrder_Button" />
+
+            <TextView
+                android:id="@+id/TotalAmount_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="@+id/TotalPrice_Title"
+                app:layout_constraintTop_toBottomOf="@+id/TotalPrice_Title" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ViewCustomerDrinks_Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="@+id/editCustomerOrder_Button"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editCustomerOrder_Button"
+                app:layout_constraintTop_toBottomOf="@+id/editCustomerOrder_Button"
+                app:srcCompat="@android:drawable/ic_menu_search"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

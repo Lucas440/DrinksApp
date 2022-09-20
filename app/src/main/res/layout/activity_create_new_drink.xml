@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewDrink">
+
+    <TextView
+        android:id="@+id/drinkName_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/drinkDesc_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink Description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="@+id/DrinkName_EditText"
+        app:layout_constraintTop_toBottomOf="@+id/DrinkName_EditText" />
+
+    <TextView
+        android:id="@+id/drinkPrice_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink Price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="@+id/DrinkName_EditText"
+        app:layout_constraintTop_toBottomOf="@+id/drinkDecs_EditText" />
+
+    <EditText
+        android:id="@+id/DrinkName_EditText"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/drinkName_Title"
+        app:layout_constraintTop_toBottomOf="@+id/drinkName_Title" />
+
+    <EditText
+        android:id="@+id/drinkDecs_EditText"
+        android:layout_width="354dp"
+        android:layout_height="113dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/drinkDesc_Title"
+        app:layout_constraintTop_toBottomOf="@+id/drinkDesc_Title" />
+
+    <Button
+        android:id="@+id/Finish_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="40dp"
+        android:text="Done!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/DrinkPrice_EditNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/drinkPrice_Title"
+        app:layout_constraintTop_toBottomOf="@+id/drinkPrice_Title" />
+</androidx.constraintlayout.widget.ConstraintLayout>
