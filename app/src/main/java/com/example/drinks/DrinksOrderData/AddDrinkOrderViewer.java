@@ -75,7 +75,7 @@ public class AddDrinkOrderViewer extends AppCompatActivity {
             }
         });
         //Gets all the data from the database DAO
-        LiveData<List<DrinkOrder>> orders = _orderDB.orderDAO().getAll();
+        LiveData<List<DrinkOrder>> orders = _orderDB._orderDAO().getAll();
         //Observes the changes to the database
         orders.observe(this, new Observer<List<DrinkOrder>>() {
             @Override

@@ -9,7 +9,6 @@ import androidx.room.Room;
 
 import android.os.Bundle;
 
-import com.example.drinks.DrinkData.Drink;
 import com.example.drinks.DrinksOrderData.CustomerOrdersAdapter;
 import com.example.drinks.DrinksOrderData.DrinkOrder;
 import com.example.drinks.DrinksOrderData.OrderDB;
@@ -47,7 +46,7 @@ public class CustomerOrder extends AppCompatActivity {
     {
         super.onResume();
 
-        LiveData<List<DrinkOrder>> orders = db.orderDAO().getAll();
+        LiveData<List<DrinkOrder>> orders = db._orderDAO().getAll();
 
 
         orders.observe(this, new Observer<List<DrinkOrder>>() {
@@ -56,7 +55,7 @@ public class CustomerOrder extends AppCompatActivity {
                 List<DrinkOrder> thisCusOrder = new ArrayList<DrinkOrder>();
                 for(DrinkOrder o : drinkOrders)
                 {
-                    if(o.CustomerID == customerID)
+                    if(o._customerID == customerID)
                     {
                         thisCusOrder.add(o);
                     }

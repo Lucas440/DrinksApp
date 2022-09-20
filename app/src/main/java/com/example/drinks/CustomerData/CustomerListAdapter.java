@@ -72,10 +72,10 @@ public class CustomerListAdapter extends RecyclerView.Adapter<CustomerListAdapte
         for(DrinkOrder order : _orderList)
         {
             //If the orders ID is the same as the Customers ID this is true
-            if(order.CustomerID == customer._uid)
+            if(order._customerID == customer._uid)
             {
                 //Adds the price of the drink to the price that will be displayed as a total
-                price += order.DrinkPrice;
+                price += order._drinkPrice;
             }
         }
 
@@ -154,7 +154,7 @@ public class CustomerListAdapter extends RecyclerView.Adapter<CustomerListAdapte
         notifyDataSetChanged();
     }
     /**
-     * A Method used to set the orderList and OrderDB in the class
+     * A Method used to set the customerList and CustomerDB in the class
      * @param db The CustomerDB that is used to set
      * @param customers The customerList that is used to set
      */

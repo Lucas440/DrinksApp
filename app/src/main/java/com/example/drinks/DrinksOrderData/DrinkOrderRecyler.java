@@ -65,16 +65,16 @@ public class DrinkOrderRecyler extends RecyclerView.Adapter<DrinkOrderRecyler.Vi
     {
         final DrinkOrder order = new DrinkOrder();
 
-        order.CustomerID = currentCustomerID;
-        order.DrinkPrice = drink._price;
-        order.DrinkName = drink._title;
-        LiveData<List<DrinkOrder>> orders = orderDB.orderDAO().getAll();
+        order._customerID = currentCustomerID;
+        order._drinkPrice = drink._price;
+        order._drinkName = drink._title;
+        LiveData<List<DrinkOrder>> orders = orderDB._orderDAO().getAll();
 
         Executor executor = Executors.newSingleThreadExecutor();
         executor.execute(new Runnable() {
             @Override
             public void run() {
-                orderDB.orderDAO().insert(order);
+                orderDB._orderDAO().insert(order);
             }
         });
 

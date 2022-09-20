@@ -55,7 +55,7 @@ public class SeatSelection extends AppCompatActivity {
 
         LiveData<List<Customer>> customers = customerDB._customerDAO().getAll();
 
-        LiveData<List<DrinkOrder>> orders = orderDB.orderDAO().getAll();
+        LiveData<List<DrinkOrder>> orders = orderDB._orderDAO().getAll();
 
         customers.observe(this, new Observer<List<Customer>>() {
             @Override

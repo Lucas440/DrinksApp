@@ -15,7 +15,7 @@ public abstract class CustomerDB extends RoomDatabase {
     //A abstract variable of CustomerDAO called _customerDAO
     public abstract CustomerDAO _customerDAO();
 
-
+    //a string  called DB_NAME which stores the name of the database
     private static final String DB_NAME = "Customer_DataBase_Name";
     //A CustomberDB called db
     private static CustomerDB db;
