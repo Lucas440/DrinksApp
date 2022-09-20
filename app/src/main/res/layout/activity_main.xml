@@ -22,7 +22,7 @@
         android:id="@+id/currentSeating_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onSettingClick"
+        android:onClick="onSeatingClick"
         android:text="Seating"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

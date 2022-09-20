@@ -17,39 +17,57 @@ import java.util.concurrent.Executors;
 
 public class NewSeating extends AppCompatActivity {
 
-    CustomerDB db;
+    //A CustomerDB called _db
+    CustomerDB _db;
+    //EditText variables called _location and _name
     EditText _location, _name;
 
+    /**
+     * A method used when the calss is created
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_seating);
+        //INITIALISE CLASS VARIABLES
+        //_location
         _location = findViewById(R.id.SeatLoaction_EditText);
+        //_name
         _name = findViewById(R.id.PersonsName_Text);
-
-        db = CustomerDB.getInstance(this);
+        //_db
+        _db = CustomerDB.getInstance(this);
     }
 
+    /**
+     * A method that is called when onSaveClick is called
+     * @param view the view that called the method
+     */
     public void  onSaveClick(View view)
     {
-        String locon = _location.getText().toString();
+        //A String called locn which gets _locations text
+        String locn = _location.getText().toString();
+        // A string called name which gets _name's text
         String name = _name.getText().toString();
 
-        Log.d("Locn", "I am Seat " + locon);
-
+        //create a new Customer and initialise the entity with method variables
         final Customer customer = new Customer();
-        customer._location = locon;
+        customer._location = locn;
         customer._name = name;
 
-        LiveData<List<Customer>> customers = db._customerDAO().getAll();
-
+        //Create a new Executor called myExecutor
         Executor myExectuor = Executors.newSingleThreadExecutor();
         myExectuor.execute(new Runnable() {
+            /**
+             * a method that is used to run the executor
+             */
             @Override
             public void run() {
-                db._customerDAO().insert(customer);
+                //inserts the customer into the database
+                _db._customerDAO().insert(customer);
             }
         });
+        //Finish executing
         finish();
     }
 }
